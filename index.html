@@ -1,12 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akash Shah - Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10%;
+      height: 60px;
+      background-color: rgb(1, 1, 60);
+    }
+
+    nav .left {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: rgb(122, 78, 224);
+      font-size: 1.1rem;
+    }
+
+    main hr {
+      border: 0;
+      background: #5899d6;
+      height: 2px;
+      margin: 60px auto;
+      width: 80%;
+    }
+
+    .firstSection {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 60px 10%;
+    }
+
+    .leftSection {
+      flex: 1;
+      min-width: 280px;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .subtext {
+      font-size: 1.3rem;
+      color: #ccc;
+    }
+
+    .rightSection {
+      flex: 1;
+      text-align: center;
+    }
+
+    .rightSection img {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 12px;
+    }
+    .text-grey{
+      color: gray;
+    }
+
+    #element {
+      color: rgb(121, 205, 225);
+    }
+
+    .secondSection {
+      max-width: 80%;
+      margin: auto;
+    }
+
+    .secondSection h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .resume-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4c8ed9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background-color: #256bb4;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      color: white;
+      font-size: 1.5rem;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #5899d6;
+    }
+
+    @media (max-width: 768px) {
+      .firstSection {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 5%;
+      }
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+    .coming-soon {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #00f0ff;
+  font-weight: 500;
+  min-height: px;
+}
+
+  </style>
 </head>
+
 <body>
-    <h1 class="heading">Welcome To My Portfolio</h1>
+  <header>
+    <nav>
+      <div class="left">Akash_Shah Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <span style="color:#00f0ff;">Akash</span>
+        <div class="subtext">And I am a passionate</div>
+        <div class="subtext">Web Developer and</div>
+        <span id="element"></span>
+
+        <br />
+        <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+
+        <div class="social-icons">
+          <a href="https://github.com/Akash20232024" target="_blank" title="GitHub">
+    <i class="fab fa-github fa-2x"></i>
+  </a>
+          <a href="https://www.linkedin.com/in/akash-shah-b69380250/" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin fa-2x"></i>
+  </a>
+           <a href="https://instagram.com/the_sky_shah22" target="_blank" title="Instagram">
+    <i class="fab fa-instagram fa-2x"></i>
+  </a>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="bg.png.webp" alt="Developer image" />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="secondSection">
+      <span class="text-grey">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <p>• Built a Python Tic-Tac-Toe game using Tkinter with sound effects<br>
+         • Working on data analytics projects using Ms Excel,postgresql,PowerBI<br>
+         • Practicing DSA and Python scripting daily
+         <div class="coming-soon">
+  <span id="comingText"></span>
+</div>
+
+      </p>
+      
+    </section>
+  </main>
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+  var typedComing = new Typed('#comingText', {
+    strings: ["More projects loading...", "Stay tuned!", "Coming soon..."],
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 1500,
+    loop: true
+  });
+</script>
+
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+        "Aspiring Data Analyst",
+        "Python Learner | Problem Solver",
+        "Web Developer in the Making",
+        "Analyzing Data, Building Web Experiences",
+        "60% into Data Analytics — Growing Daily",
+        "Learning Python, One Script at a Time",
+        "Transforming Data into Insights",
+        "Designing Websites with Purpose",
+        "Passionate About Tech & Learning"
+      ],
+      typeSpeed: 50,
+      backSpeed: 25,
+      backDelay: 1500,
+      loop: true
+    });
+  </script>
 </body>
 </html>
