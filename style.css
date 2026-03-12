@@ -118,17 +118,20 @@ main hr {
 }
 
 /* Buttons & social icons */
-.resume-link-btn {
-  margin-top: 20px;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4c8ed9;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
+.small-resume-link {
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
+
+.small-resume-link a {
+  color: #4c8ed9;
+  text-decoration: none;
+}
+
+.small-resume-link a:hover {
+  text-decoration: underline;
+}
+
 
 .resume-btn:hover {
   background-color: #256bb4;
