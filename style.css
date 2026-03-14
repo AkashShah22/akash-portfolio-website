@@ -96,10 +96,23 @@ main hr {
 }
 
 .rightSection img {
-  width: 80%;
-  max-width: 400px;
-  border-radius: 12px;
+  width: 320px;          /* equal width & height */
+  height: 320px;
+  border-radius: 50%;    /* perfect circle */
+  object-fit: cover;     /* center crop karta hai */
+  object-position: center top;  /* zaroorat ho to adjust */
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+
+  box-shadow:
+   0 0 0 4px #050515,
+   0 0 25px rgba(255, 165, 0, 0.4),
+   0 0 60px rgba(255, 165, 0, 0.25);
+}
+@media (max-width: 768px) {
+  .rightSection img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /* Utility text */
