@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akash Shah - Portfolio</title>
+  <title>Akash Shah | Backend &amp; Web Developer</title>
+  <meta name="description" content="Akash Shah is a B.Tech CSE student at JUET Guna focused on backend and web development, open source, and DSA in C++." />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
@@ -12,14 +13,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="script.js">
 </head>
 
 <body>
   <header>
     <nav>
       <div class="left">
-        <img src="akash_logo.png" alt="Akash logo" class="logo">
+        <img src="akash_logo.png" alt="Akash Shah logo" class="logo">
         <span>Akash Shah</span>
       </div>
       
@@ -27,8 +27,9 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#services">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -39,34 +40,28 @@
     <section class="firstSection" id="home">
       <div class="leftSection">
   Hi, my name is <span style="color:#00f0ff;">Akash</span>.
-  <div class="subtext">I am a B.Tech CSE student</div>
-  <div class="subtext">interested in Web Development, Backend.</div>
+  <div class="subtext">B.Tech CSE student at JUET Guna building backend and web projects, and contributing to open source.</div>
   <span id="element"></span>
 
 
         <br />
-        <!-- <a href="AKASH_RESUME.pdf" class="resume-btn" download>Download Resume</a> -->
-
         <div class="social-icons">
-          <a href="https://github.com/AkashShah22" target="_blank" title="GitHub" rel="noreferrer">
+          <a href="https://github.com/AkashShah22" target="_blank" title="GitHub" aria-label="GitHub profile" rel="noreferrer">
             <i class="fab fa-github fa-2x"></i>
           </a>
-          <a href="https://www.linkedin.com/in/akash-shah-b69380250/" target="_blank" title="LinkedIn" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/akash-shah-b69380250/" target="_blank" title="LinkedIn" aria-label="LinkedIn profile" rel="noreferrer">
             <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="https://instagram.com/the_sky_shah22" target="_blank" title="Instagram" rel="noreferrer">
-            <i class="fab fa-instagram fa-2x"></i>
           </a>
 
         </div>
         <div class="subtext">
-  Currently learning core concepts in DSA and C++, and building small projects to apply them.
+  Practising DSA in C++ and building projects in C, Python and JavaScript.
 </div>
 
       </div>
 
       <div class="rightSection">
-        <img src="akash2.pic.jpeg" alt="Developer image" />
+        <img src="akash2.pic.jpeg" alt="Portrait of Akash Shah" />
       </div>
     </section>
 
@@ -76,46 +71,97 @@
   <span class="text-grey">What I have built so far</span>
   <h1>Projects</h1>
 
-  <p>
-    <strong>VR Game Prototype – Unity (2025)</strong><br>
-    Built a basic 3D VR environment with simple player movement and object interactions in Unity for an introductory VR experience.
-  </p>
-  <br>
+  <article class="project-card">
+    <h2>Open Source: GeoChronicle / Templokilo</h2>
+    <p>Fixed a crash when uploaded images had no GPS EXIF data. Added tag color customization. Resolved merge conflicts and got pull requests reviewed.</p>
+    <p class="tech-stack"><strong>Tech stack:</strong> JavaScript, Git, GitHub</p>
+    <a href="https://github.com/AkashShah22" target="_blank" rel="noreferrer">View code on GitHub</a>
+  </article>
 
-  <p>
-    <strong>Personal Portfolio Website (2025)</strong><br>
-    Developed and deployed a responsive personal portfolio website using HTML, CSS, and basic JavaScript to showcase projects and contact information.
-  </p>
-  <br>
+  <article class="project-card">
+    <h2>Vehicle Parking Management System</h2>
+    <p>Command-line app for multi-level parking with slot allocation, entry and departure tracking, automatic fee calculation, file persistence, and admin login for reports.</p>
+    <p class="tech-stack"><strong>Tech stack:</strong> C, file handling</p>
+    <a href="https://github.com/AkashShah22/vehicle-parking-management-system" target="_blank" rel="noreferrer">View code on GitHub</a>
+  </article>
 
-  <p>
-    <strong>Vehicle Parking Management System – C (2025)</strong><br>
-    Implemented a C-based parking management system with real-time vehicle tracking, file-based data storage, password-protected access, and time-stamped parking reports.
-  </p>
+  <article class="project-card">
+    <h2>Tic-Tac-Toe Engine</h2>
+    <p>Desktop game with win detection and move history; game logic separated from UI classes.</p>
+    <p class="tech-stack"><strong>Tech stack:</strong> Python, Tkinter, OOP</p>
+    <a href="https://github.com/AkashShah22/tic-tac-toe-python" target="_blank" rel="noreferrer">View code on GitHub</a>
+  </article>
+
+  <article class="project-card">
+    <h2>This Portfolio Website</h2>
+    <p>Personal portfolio website.</p>
+    <p class="tech-stack"><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
+    <a href="https://github.com/AkashShah22/akash-portfolio-website" target="_blank" rel="noreferrer">View code on GitHub</a>
+  </article>
+
+  <article class="project-card">
+    <h2>DiseaseScout — Smart Health Prediction System</h2>
+    <p>Hackathon project showcasing an AI-powered symptom analysis experience and health insight dashboards.</p>
+    <div class="project-gallery">
+      <img src="images/projects/hackethon-project.2jpg.jpg" alt="DiseaseScout symptom analysis dashboard with charts and intervention pathways">
+      <img src="images/projects/hackethon-project.jpg" alt="DiseaseScout smart health prediction system landing page">
+    </div>
+  </article>
+
+  <article class="project-card">
+    <h2>SIH 2026: Field-Deployable AI-Powered Smart Farming Assistant</h2>
+    <p>Participated in Smart India Hackathon 2026, working on problem statement SIH26180 from Qualcomm Inc. Our team built a hardware rover prototype for a field-deployable smart farming assistant and developed an AI-based plant-health analysis workflow to support crop monitoring.</p>
+    <p class="tech-stack"><strong>Problem statement:</strong> SIH26180 &nbsp;|&nbsp; <strong>Theme:</strong> Disaster Management</p>
+    <div class="project-gallery">
+      <img src="images/projects/rover_img2.jpg" alt="Hardware rover prototype built for the SIH 2026 smart farming assistant">
+      <img src="images/projects/rover_img3.jpg" alt="Rover prototype electronics and wheels during assembly">
+      <img src="images/projects/ai_model_trainn.jpg" alt="AI model predicting tomato plant health from an image">
+      <img src="images/projects/sih_2026_presentation.jpg" alt="Team presenting the rover project at the SIH 2026 internal hackathon">
+    </div>
+  </article>
 
   <div class="coming-soon">
     <span id="comingText"></span>
   </div>
 </section>
 
+<section class="infoSection" id="achievements">
+  <h1>Achievements</h1>
+  <article class="achievement-card">
+    <h2>LaTeX for Engineers Workshop</h2>
+    <p>Participated in the three-day technical workshop organized by the Development &amp; Innovation Centre at Jaypee University of Engineering &amp; Technology, Guna, from 2 to 4 February 2026.</p>
+    <a href="images/achievements/latex certrificate of participation.jpeg" target="_blank" rel="noreferrer">
+      <img src="images/achievements/latex certrificate of participation.jpeg" alt="Certificate of participation for the LaTeX for Engineers workshop at JUET Guna, held 2–4 February 2026">
+    </a>
+    <a class="certificate-link" href="images/achievements/latex certrificate of participation.jpeg" target="_blank" rel="noreferrer">View LaTeX workshop certificate</a>
+  </article>
+  <article class="achievement-card">
+    <h2>CodeSrijan National Hackathon 2026</h2>
+    <p>Participated in the hackathon at Jaypee University of Engineering and Technology, Guna, from 16 to 18 April 2026.</p>
+    <a href="images/achievements/codesrijan certficate.jpg" target="_blank" rel="noreferrer">
+      <img src="images/achievements/codesrijan certficate.jpg" alt="Certificate of participation in CodeSrijan National Hackathon 2026 at JUET Guna">
+    </a>
+    <a class="certificate-link" href="images/achievements/codesrijan certficate.jpg" target="_blank" rel="noreferrer">View CodeSrijan hackathon certificate</a>
+  </article>
+</section>
+
 <!-- About Section -->
 <section class="infoSection" id="about">
   <h1>About Me</h1>
   <p>
-    I am a first-year B.Tech Computer Science student who enjoys learning by building small projects.
-    My interests include web development, backend development, and VR/AR applications. I like turning ideas
-    into simple, working applications and improving a bit every day.
+    I am a second-year B.Tech CSE student at Jaypee University of Engineering and Technology (JUET), Guna, Madhya Pradesh (2025 to present),
+    I focus on backend and web development and practise DSA in C++. I am looking for internships and hackathons.
   </p>
 </section>
 <hr>
-<!-- Services / What I Can Do -->
+<!-- Skills -->
 <section class="infoSection" id="services">
-  <h1>What I Can Do</h1>
+  <h1>Skills</h1>
   <p>
-    • Build basic responsive websites using HTML, CSS, and JavaScript(basic).<br>
-    • Create simple backend or console-based programs in C/C++ and Python.<br>
-    • Experiment with VR/AR prototypes in Unity and basic 3D scenes in Blender.<br>
-    • Use Git and GitHub for version control on my projects.
+    <strong>Languages:</strong> C, C++, Python, JavaScript, SQL<br>
+    <strong>Web and backend:</strong> HTML, CSS, REST APIs, JSON, PostgreSQL<br>
+    <strong>Tools:</strong> Git, GitHub, Linux, VS Code<br>
+    <strong>Core concepts:</strong> DSA, OOP, File I/O
   </p>
 </section>
 
@@ -127,11 +173,10 @@
   </p>
   <p>
     <strong>Email:</strong> <a href="mailto:akash.shah84099@gmail.com">akash.shah84099@gmail.com</a><br>
-    <strong>Location:</strong> Patna, Bihar, India
+    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/akash-shah-b69380250/" target="_blank" rel="noreferrer">Akash Shah on LinkedIn</a>
   </p>
- <form class="contact-form" 
-      action="https://formspree.io/f/meerznjp" 
-      method="POST">
+ <form class="contact-form" name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
   <div class="form-group">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name please :)" required>
@@ -141,11 +186,6 @@
     <label for="email">Email</label>
     <input type="email" id="email" name="email" placeholder="Your email" required>
   </div>
-  <div class="form-group">
-    <label for="Phone">Phone</label>
-    <input type="tel" id="Phone" name="Phone" placeholder="Your phone number please" req>
-  </div>
-
   <div class="form-group">
     <label for="message">Message</label>
     <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
@@ -159,7 +199,6 @@
     Or email me directly at
     <a href="mailto:akash.shah84099@gmail.com">akash.shah84099@gmail.com</a>
   </p>
-</section>
 </section>
 
   </main>
@@ -184,7 +223,7 @@
     'Python Learner | Problem Solver',
     'Building Projects to Learn',
     'Transforming Ideas into Code',
-    'Creating Simple, Clean Interfaces',
+    'Creating Clean Interfaces',
     'Passionate About Tech & Learning'
       ],
       typeSpeed: 50,
